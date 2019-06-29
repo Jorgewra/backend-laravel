@@ -456,7 +456,7 @@ use Swagger\Annotations as SWG;
  */
 /**
  *
- * @SWG\get(
+ * @SWG\Get(
  *         path="/client/{id}",
  *         tags={"client"},
  *         operationId="getClient",
