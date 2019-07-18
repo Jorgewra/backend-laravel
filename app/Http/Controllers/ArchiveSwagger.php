@@ -440,11 +440,16 @@ use Swagger\Annotations as SWG;
  *            type="string",
  *            in="path"
  *         ),
+ *         @SWG\Parameter(
+ *             name="client",
+ *             in="body",
+ *             required=true,
+ *             @SWG\Schema(ref="#/definitions/Client"),
+ *        ),
  *         @SWG\Response(
  *             response=200,
  *             description="Sucess",
  *             @SWG\Schema(ref="#/definitions/ClientResponse"),
- *         ),
  *         ),
  *         @SWG\Response(response=400, description="Bad request"),
  *         @SWG\Response(response=500, description="Server Errors"),
@@ -468,12 +473,10 @@ use Swagger\Annotations as SWG;
  *            type="string",
  *            in="path"
  *         ),
- *        @SWG\Response(
- *          response=200,
- *          description="successful operation",
- *          @SWG\Schema (
- *                  @SWG\Property(property="message", type="string"),
- *          )
+ *         @SWG\Response(
+ *             response=200,
+ *             description="Sucess",
+ *             @SWG\Schema(ref="#/definitions/ClientResponse"),
  *         ),
  *         @SWG\Response(response=400, description="Bad request"),
  *         @SWG\Response(response=500, description="Server Errors"),
